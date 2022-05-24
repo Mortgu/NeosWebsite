@@ -1,0 +1,13 @@
+'os.Site:Document.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'os.Site:Constraint.Content.Restricted': false
+  constraints:
+    nodeTypes:
+      'os.Site:Constraint.Document.Restricted': false

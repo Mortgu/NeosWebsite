@@ -1,0 +1,8 @@
+'os.Site:Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'os.Site:Mixin.Image': true
+  ui:
+    label: Image
+    icon: picture
+    position: 300

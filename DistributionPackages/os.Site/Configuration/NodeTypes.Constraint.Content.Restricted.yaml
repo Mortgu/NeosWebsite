@@ -1,0 +1,28 @@
+##
+# Adding this as superType will prevent inserting it into default content collections
+#
+# [Youtube Tutorial explaining constraints](https://www.youtube.com/watch?v=ZCRYsYvxXFI&t=247s)
+#
+# Example:
+# Let's say you have a have a list of list items. List items should only be
+# created inside of lists, so use this:
+#
+# 'os.Site:Content.List':
+#   superTypes:
+#     'Neos.Neos:Content': true
+#     'Neos.Neos:ContentCollection': true
+#   constraints:
+#     nodeTypes:
+#       '*': false
+#       'os.Site:Content.List.Item': true
+#
+# 'os.Site:Content.List.Item':
+#   superTypes:
+#     'Neos.Neos:Content': true
+#     'os.Site:Constraint.Content.Restricted': true
+#   properties:
+#     ...
+#
+##
+'os.Site:Constraint.Content.Restricted':
+  abstract: true

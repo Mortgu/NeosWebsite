@@ -1,0 +1,13 @@
+
+'os.Site:Content.Text':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Text
+    icon: file-text
+    position: 200
+    inlineEditable: true
+  properties:
+    text:
+      options:
+        preset: 'text.free'

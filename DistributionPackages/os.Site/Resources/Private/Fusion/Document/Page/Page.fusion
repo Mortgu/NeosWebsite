@@ -4,8 +4,11 @@ prototype(os.Site:Document.Page) < prototype(os.Site:Document.AbstractPage) {
             nodePath = 'main'
         }
 
+        pageHeader = os.Site:Component.PageHeader
+
         renderer = afx`
             <main class="main">
+                {props.pageHeader}
                 {props.main}
             </main>
         `

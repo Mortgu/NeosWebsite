@@ -1,0 +1,10 @@
+prototype(os.Site:Content.PageHeader) < prototype(Neos.Fusion:ContentComponent) {
+
+    src = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+    }
+
+    renderer = os.Site:Component.PageHeader {
+        @apply.props = ${props}
+    }
+}

@@ -1,0 +1,12 @@
+prototype(os.Site:Document.Subpage) < prototype(Neos.Fusion:Component) {
+
+    main = Neos.Neos:ContentCollectionRenderer {
+        item = ${q(node).children().get(0)}
+    }
+
+    renderer = afx`
+        <section>
+            {props.main}
+        </section>
+    `
+}

@@ -1,0 +1,26 @@
+'os.Site:Content.PageHeader':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
+  ui:
+    label: PageHeader
+    icon: 'icon-image'
+    position: 200
+    inlineEditable: true
+    inspector:
+      groups:
+        'details':
+          label: 'details'
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Image'
+        inspector:
+          group: 'details'
+  childNodes:
+    headline:
+      type: 'os.Site:Content.Headline'
+    text:
+      type: 'os.Site:Content.Text'
+

@@ -5,3 +5,6 @@
     label: i18n
     icon: file-o
     position: 100
+  childNodes:
+    pageHeader:
+      type: 'os.Site:Content.PageHeader'

@@ -1,0 +1,19 @@
+prototype(os.Site:Component.PageHeader) < prototype(Neos.Fusion:Component) {
+    src = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+    }
+
+    renderer = afx`
+        <div class="page-header">{props.src}</div>
+    `
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            documentNode = ${documentNode}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
+        }
+    }
+}

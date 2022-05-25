@@ -1,6 +1,15 @@
 prototype(os.Site:Component.Layout.Default) < prototype(Neos.Fusion:Component) {
     content = ''
 
+    sites = Neos.Fusion:Loop {
+        items = ${q(node).find('[instanceof os.Site:Document.Page], [instanceof os.Site:Document.Homepage]').get()}
+        itemName = 'site'
+        itemRenderer = os.Site:Document.Subpage {
+            content = ${q(site).children().get(0)}
+            @context.node = ${site}
+        }
+    }
+
     renderer = afx`
         <os.Site:Component.Header />
         {props.content}

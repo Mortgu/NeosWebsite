@@ -27,3 +27,6 @@
           editorOptions:
             nodeTypes:
               - 'Neos.Neos:Document'
+  childNodes:
+    pageHeader:
+      type: 'os.Site:Content.PageHeader'

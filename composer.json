@@ -13,7 +13,8 @@
     },
     "require": {
         "os/site": "@dev",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "carbon/includeassets": "^5.5"
     },
     "repositories": {
         "distribution": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79a667dcb1e26b12fc230fb63c425121",
+    "content-hash": "00a187115a3c38e214df56d2992c96bf",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -180,6 +180,73 @@
                 }
             ],
             "time": "2022-03-25T10:40:00+00:00"
+        },
+        {
+            "name": "carbon/includeassets",
+            "version": "5.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CarbonPackages/Carbon.IncludeAssets.git",
+                "reference": "6de7788827482fe0d253c78ab5a249acd9b62b98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CarbonPackages/Carbon.IncludeAssets/zipball/6de7788827482fe0d253c78ab5a249acd9b62b98",
+                "reference": "6de7788827482fe0d253c78ab5a249acd9b62b98",
+                "shasum": ""
+            },
+            "require": {
+                "carbon/eel": "^1.7 || ^2.0 || dev-master",
+                "neos/fusion-afx": "^1.0 || ^7.0 ||  ^8.0 || dev-master",
+                "neos/neos": "^5.3 || ^7.0 || ^8.0 || dev-master"
+            },
+            "type": "neos-carbon",
+            "extra": {
+                "installer-name": "Carbon.IncludeAssets",
+                "neos": {
+                    "package-key": "Carbon.IncludeAssets"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Carbon\\IncludeAssets\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Uhlmann",
+                    "email": "hello@uhlmann.pro",
+                    "homepage": "https://www.uhlmann.pro",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Include your assets (css, js) in an easy way into Neos",
+            "keywords": [
+                "FUSION",
+                "Neos",
+                "carbon",
+                "flow",
+                "helper"
+            ],
+            "support": {
+                "issues": "https://github.com/CarbonPackages/Carbon.IncludeAssets/issues",
+                "source": "https://github.com/CarbonPackages/Carbon.IncludeAssets/tree/5.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/Jonnitto/20eur",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jonnitto",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-04-04T16:25:53+00:00"
         },
         {
             "name": "carbon/link",
@@ -7008,7 +7075,7 @@
         },
         {
             "name": "os/site",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/os.Site",

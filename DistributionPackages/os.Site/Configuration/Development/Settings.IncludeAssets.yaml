@@ -1,0 +1,17 @@
+Carbon:
+  IncludeAssets:
+    Packages:
+      'Qf.Hlk':
+        Path:
+          Inline:
+            CSS: 'Public/Frontend'
+            JS: 'Public/Frontend'
+          File:
+            CSS: 'Public/Frontend/build'
+            JS: 'Public/Frontend/build'
+        General:
+          Head:
+            - app.css
+          Body:
+            - app.js
+            - runtime.js

@@ -8,5 +8,6 @@
     inlineEditable: true
   properties:
     title:
+      defaultValue: 'headline'
       options:
         preset: 'text.title'
